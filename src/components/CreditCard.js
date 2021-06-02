@@ -10,15 +10,15 @@ const CreditCard = () => {
             start={[0.0, 0.0]}
             end={[1.0, 1.0]}>
             <View style={styles.creditCardTitleContainer}>
-                <Text style={styles.creditCardTitleText}>Family Card</Text>
+                <Text style={styles.creditCardTitleText}>Cartão Pessoal</Text>
                 <View style={{ flexDirection: 'row', width: 40, justifyContent: 'flex-end' }}>
                     <View style={{ height: 30, width: 30, borderRadius: 15, backgroundColor: 'rgba(255,255,255,0.6)' }}></View>
                     <View style={{ position: 'absolute', right: '40%', height: 30, width: 30, borderRadius: 15, backgroundColor: 'rgba(255,255,255,0.6)' }}></View>
                 </View>
             </View>
             <View style={styles.creditCardContentContainer}>
-                <Text style={styles.creditCardNumberText}>8847 4321 2336 4421</Text>
-                <Text style={styles.creditCardValueText}>$8,230</Text>
+                <Text style={styles.creditCardNumberText}>1234 4567 7891 1234</Text>
+                <Text style={styles.creditCardValueText}>R$11,530</Text>
             </View>
         </LinearGradient>
     )

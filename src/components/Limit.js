@@ -60,8 +60,8 @@ const Limit = ({ }) => {
                         <Ionicons name="cart" size={20} color="#E9E9E9" />
                     </View>
                     <View style={{ flex: 1, justifyContent: 'center' }}>
-                        <Text style={styles.limitValuesTextMain}>${leftToSpend.toString()}</Text>
-                        <Text style={styles.limitValuesTextSecond}>Left to Spend</Text>
+                        <Text style={styles.limitValuesTextMain}>R${leftToSpend.toString()}</Text>
+                        <Text style={styles.limitValuesTextSecond}>Disponível</Text>
                     </View>
                 </View>
                 <View style={styles.limitValuesContainer}>
@@ -69,8 +69,8 @@ const Limit = ({ }) => {
                         <Ionicons name="lock-closed" size={20} color="#E9E9E9" />
                     </View>
                     <View>
-                        <Text style={styles.limitValuesTextMain}>${limit.toString()}</Text>
-                        <Text style={styles.limitValuesTextSecond}>Spend Limit</Text>
+                        <Text style={styles.limitValuesTextMain}>R${limit.toString()}</Text>
+                        <Text style={styles.limitValuesTextSecond}>Limite</Text>
                     </View>
                 </View>
             </View>
@@ -85,10 +85,10 @@ const Limit = ({ }) => {
             <View>
                 <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 20 }}>
                     <Text style={styles.changeLimitText}>
-                        You can change the limit at any time
+                        Você pode mudar o limite a qualquer hora
                 </Text>
                     <TouchableOpacity onPress={() => setChangeLimit(!changeLimit)}>
-                        <Text style={styles.clickableChangeLimitText}>Change Limit</Text>
+                        <Text style={styles.clickableChangeLimitText}>Clicando aqui</Text>
                     </TouchableOpacity>
                 </View>
                 {changeLimit && <TextInput

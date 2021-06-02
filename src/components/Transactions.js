@@ -21,7 +21,7 @@ export default function Transactions({ dataByDay, dataByMonth, dataByWeek }) {
                     <Text style={[styles.buttonText]}>{item.company}{"\n"}<Text style={{ fontSize: 10, fontFamily: 'Montserrat_300Light', lineHeight: 18 }}>{item.category}</Text></Text>
                 </View>
                 <View style={[styles.price]}>
-                    <Text style={[styles.buttonText]}>{item.value > 0 ? `+$${item.value}` : `-$${Math.abs(item.value)}`}</Text>
+                    <Text style={[styles.buttonText]}>{item.value > 0 ? `+R$${item.value}` : `-R$${Math.abs(item.value)}`}</Text>
                     {group === 0 ? <Text style={[styles.buttonText, { fontSize: 10, fontFamily: 'Montserrat_300Light', lineHeight: 18 }]}>{moment(item.date.getTime()).fromNow()}</Text>
                         : <Text style={[styles.buttonText, { fontSize: 10, fontFamily: 'Montserrat_300Light', lineHeight: 18 }]}>{group === 1 ? `${item.label} Week` : date} - {item.year}</Text>
                     }
@@ -33,21 +33,21 @@ export default function Transactions({ dataByDay, dataByMonth, dataByWeek }) {
 
     return (
         <View style={styles.container}>
-            <Text style={styles.transactionsTitle}>Transactions</Text>
+            <Text style={styles.transactionsTitle}>Transações</Text>
             <View style={styles.headerContainer}>
                 <TouchableWithoutFeedback style={{ flex: 1 }} onPress={() => setGroup(0)}>
                     <View style={[group === 0 ? styles.headerSelected : styles.defaultHeader]}>
-                        <Text style={[group === 0 ? styles.headerTextSelected : styles.headerTextDefault]}>Daily</Text>
+                        <Text style={[group === 0 ? styles.headerTextSelected : styles.headerTextDefault]}>Dia</Text>
                     </View>
                 </TouchableWithoutFeedback>
                 <TouchableWithoutFeedback style={{ flex: 1 }} onPress={() => setGroup(1)}>
                     <View style={[group === 1 ? styles.headerSelected : styles.defaultHeader]}>
-                        <Text style={[group === 1 ? styles.headerTextSelected : styles.headerTextDefault]}>Weekly</Text>
+                        <Text style={[group === 1 ? styles.headerTextSelected : styles.headerTextDefault]}>Semana</Text>
                     </View>
                 </TouchableWithoutFeedback>
                 <TouchableWithoutFeedback style={{ flex: 1 }} onPress={() => setGroup(2)}>
                     <View style={[group === 2 ? styles.headerSelected : styles.defaultHeader]}>
-                        <Text style={[group === 2 ? styles.headerTextSelected : styles.headerTextDefault]}>Monthly</Text>
+                        <Text style={[group === 2 ? styles.headerTextSelected : styles.headerTextDefault]}>Mês</Text>
                     </View>
                 </TouchableWithoutFeedback>
             </View>

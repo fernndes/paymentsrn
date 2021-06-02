@@ -12,7 +12,7 @@ export default function Charts() {
     return (
         <SafeAreaView style={{ flex: 1 }}>
             <ScrollView style={styles.container}>
-                <Chart title="Spending" graphHeight={250} data={dataByMonth} />
+                <Chart title="Gastos" graphHeight={250} data={dataByMonth} />
                 <Limit />
                 <Transactions dataByDay={dataByDay} dataByMonth={dataByMonth} dataByWeek={dataByWeek} />
             </ScrollView>

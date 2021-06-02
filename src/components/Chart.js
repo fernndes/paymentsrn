@@ -46,7 +46,7 @@ function Chart({ data, title, graphHeight }) {
         return (
             <View style={styles.valueIndicatorContainer}>
                 <Text style={styles.valueIndicatorText}>
-                    {item.value > 0 ? `+$${item.value}` : `-$${Math.abs(item.value)}`}
+                    {item.value > 0 ? `+R$${item.value}` : `-R$${Math.abs(item.value)}`}
                 </Text>
             </View >
         )

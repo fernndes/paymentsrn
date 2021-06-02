@@ -21,20 +21,20 @@ export default function Wallet() {
             <ScrollView style={styles.container}>
                 <View style={styles.cards}>
                     <View style={styles.title}>
-                        <Text style={styles.textCard}>My Cards</Text>
+                        <Text style={styles.textCard}>Meus Cartões</Text>
                         <View style={styles.icons}>
                             <Ionicons name="add" size={20} color="#E9E9E9" />
                         </View>
                     </View>
                     <CreditCard />
                     <View style={styles.cardsButtons}>
-                        <CustomButton title="Transfer" iconName="arrow-forward-outline" />
-                        <CustomButton title="Top up" iconName="add" />
+                        <CustomButton title="Tranferências" iconName="arrow-forward-outline" />
+                        <CustomButton title="Pagamentos" iconName="add" />
                     </View>
                 </View>
                 <View style={styles.features}>
-                    <Text style={styles.featuresTitle}>Features</Text>
-                    <Features title="Contactless" iconName="volume-high" />
+                    <Text style={styles.featuresTitle}>Configurações</Text>
+                    <Features title="Contactless" iconName="wifi-outline" />
                     <Features title="Online" iconName="desktop-outline" />
                 </View>
             </ScrollView>
